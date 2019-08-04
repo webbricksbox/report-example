@@ -1,20 +1,26 @@
-<mat-toolbar style="background-color: chocolate">
-    <mat-toolbar-row>
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
-        <mat-icon aria-label="Side nav toggle icon">MinClick</mat-icon>
-      </button>
-      <!-- <span><img src="./assets/devglan.png"></span> -->
-    </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav #drawer mode="side" opened role="navigation">
-      <mat-nav-list>
-        <a mat-list-item routerLink='/home'>Home</a>
-        <a mat-list-item routerLink='/dashboard'>Dashboard</a>
-        <a mat-list-item routerLink='/charts/column'>Reports</a>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+<mat-toolbar style="background-color: #303f9f">
+  <mat-toolbar-row>
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <mat-icon aria-label="Side nav toggle icon">
+        <span style="color: chartreuse; font-size: 25px">MiniClick</span>
+      </mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation" style="background-color: #3f51b1">
+      <!-- style="background-color: #ff4081" -->
+    <mat-nav-list>
+      <a mat-list-item routerLink='/home'> <span style="color: beige; font-size: 20px; "> Home </span></a>
+      <a mat-list-item routerLink='/dashboard'><span style="color: beige; font-size: 20px; "> Dashboard </span> </a>
+      <a mat-list-item routerLink='/charts/column'> <span style="color: beige; font-size: 20px; "> Reports </span> </a>
+      <!-- <mat-nav-list>
+        <a mat-list-item routerLink='/pie'> <span style="color: beige; font-size: 20px; "> Pie Chart </span> </a>
+        <a mat-list-item routerLink='/dougnut'> <span style="color: beige; font-size: 20px; "> Dougnut Chart </span> </a>
+      </mat-nav-list> -->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -8,11 +8,30 @@ import {
   MatIconModule,
   MatSidenavModule,
   MatListModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTableModule,
+  MatFormFieldModule,
+  MatPaginatorModule,
+  MatCheckboxModule,
+  MatInputModule,
+  MatCardModule,
+  MatSortModule
 } from '@angular/material';
 
 @NgModule({
-  imports: [CommonModule, GoogleChartsModule, MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule],
-  exports: [CommonModule, GoogleChartsModule, MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule],
+  imports: [
+    CommonModule, GoogleChartsModule, MatButtonModule,
+    MatToolbarModule, MatNativeDateModule, MatIconModule,
+    MatSidenavModule, MatListModule, MatTableModule,
+    MatFormFieldModule, MatPaginatorModule, MatSortModule,
+    MatCheckboxModule, MatInputModule, MatCardModule
+  ],
+  exports: [
+    CommonModule, GoogleChartsModule, MatButtonModule,
+    MatToolbarModule, MatNativeDateModule, MatIconModule,
+    MatSidenavModule, MatListModule, MatTableModule,
+    MatFormFieldModule, MatPaginatorModule, MatCheckboxModule,
+    MatInputModule, MatSortModule, MatCardModule
+  ],
 })
 export class CustomMaterialModule { }

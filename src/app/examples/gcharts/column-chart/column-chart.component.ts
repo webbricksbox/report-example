@@ -9,16 +9,16 @@ export class ColumnChartComponent implements OnInit {
 
   constructor() { }
 
-  title = 'Company Hiring Report';  
+  title = 'Game and Gamers Report';  
   type = 'ColumnChart';  
   data = [  
-     ["2014", 200],  
-     ["2015", 560],  
-     ["2016", 280],  
-     ["2017", 300],  
-     ["2018", 600]  
+     ["A", 200],  
+     ["B", 560],  
+     ["C", 280],  
+     ["D", 300],  
+     ["E", 600]  
   ];  
-  columnNames = ['Year', 'India'];  
+  columnNames = ['Game', '# of Gamers'];  
   options = {};  
   width = 600;  
   height = 400;  
