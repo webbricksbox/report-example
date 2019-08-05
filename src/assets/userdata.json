@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "userName": "jon",
+        "game": "A",
+        "level": "Easy",
+        "startTime": "",
+        "endTime": "",
+        "score": "210"
+    },
+    {
+        "id": 2,
+        "userName": "sam",
+        "game": "B",
+        "level": "Hard",
+        "startTime": "",
+        "endTime": "",
+        "score": "4800"
+    },
+    {
+        "id": 3,
+        "userName": "harry",
+        "game": "A",
+        "level": "Medium",
+        "startTime": "",
+        "endTime": "",
+        "score": "1090"
+    },
+    {
+        "id": 4,
+        "userName": "smith",
+        "game": "C",
+        "level": "Easy",
+        "startTime": "",
+        "endTime": "",
+        "score": "50000"
+    },{
+        "id": 5,
+        "userName": "joey",
+        "game": "B",
+        "level": "Medium",
+        "startTime": "",
+        "endTime": "",
+        "score": "2890"
+    }
+]
